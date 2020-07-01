@@ -1,0 +1,47 @@
+@import "abstracts";
+
+p {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: lighter;
+  margin: 0 0 16px;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  @include medium-screen {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 8px;
+  }
+
+}
+
+h2 {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 0 16px;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  @include medium-screen {
+    margin: 0 0 8px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+}
+
+span {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+

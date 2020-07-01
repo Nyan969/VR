@@ -1,0 +1,22 @@
+@import "abstracts";
+
+
+.card {
+  box-sizing: border-box;
+  border: 1px solid $gray-background;
+  border-radius: 5px;
+  background-color: $white;
+  height: 100%;
+  padding: 20px 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .title {
+    color: $blue-title;
+  }
+
+  .author {
+    color: $gray-text
+  }
+}

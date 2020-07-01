@@ -1,0 +1,37 @@
+@import "typography";
+@import "../abstracts/variables";
+$app-font-size: 16px;
+$app-text-color: black;
+**,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: $app-font-size;
+  color: $app-text-color;
+  background-color: $gray-background;
+}
+::selection {
+  background-color: lightskyblue;
+  color: black;
+}
+[hidden] {
+  display: none !important;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
