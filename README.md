@@ -1,4 +1,4 @@
-# VoodooRocks
+# [VoodooRocks](https://nyan969.github.io/VR/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 
