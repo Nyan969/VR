@@ -36,12 +36,14 @@ export class HomeComponent implements OnInit {
 
   addAuthor(posts) {
     this.users.subscribe(users => {
-      this.posts = posts.map(post => {
-        post.author = users.find(user => {
-          return user.id === post.userId;
-        }).name;
-        return post;
-      });
+      if (users) {
+        this.posts = posts.map(post => {
+          post.author = users.find(user => {
+            return user.id === post.userId;
+          }).name;
+          return post;
+        });
+      }
       this.allPosts();
       this.load = true;
     });
